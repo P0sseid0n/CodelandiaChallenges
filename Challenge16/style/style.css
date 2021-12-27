@@ -1,0 +1,293 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body > header {
+  background-color: #f7c7b9;
+  padding: 16px 0;
+}
+
+body > header .container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+body > header a {
+  font-size: 24px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+body > header a span {
+  vertical-align: super;
+}
+
+body > header nav a {
+  font-size: 16px;
+  vertical-align: super;
+  margin: 0 12px;
+}
+
+body > header nav a:hover {
+  text-decoration: underline;
+}
+
+body > main {
+  background-color: #f7c7b9;
+  padding-top: 32px;
+  padding-bottom: 96px;
+}
+
+body > main .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body > main div {
+  width: 40%;
+}
+
+body > main h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+body > main p {
+  color: #404040;
+}
+
+button.cta {
+  background-color: #da2535;
+  color: white;
+  border: none;
+  outline: none;
+  margin-top: 48px;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+button.cta:hover {
+  background-color: #c71c2f;
+}
+
+button.cta img {
+  margin-right: 10px;
+}
+
+body > section#acessorios {
+  padding: 64px 0;
+}
+
+body > section#acessorios .container {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body > section#acessorios .container header {
+  max-width: 500px;
+}
+
+body > section#acessorios .container header h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+body > section#acessorios .container header p {
+  color: #404040;
+  font-size: 16px;
+}
+
+body > section#acessorios .container main {
+  margin-top: 32px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body > section#acessorios .container div {
+  max-width: 200px;
+}
+
+body > section#acessorios .container div h3 {
+  font-size: 20px;
+}
+
+body > section#acessorios .container div p {
+  font-size: 16px;
+  color: #8d8d8d;
+}
+
+body > section#comemore {
+  padding: 96px 0;
+  background-color: #f7c7b9;
+}
+
+body > section#comemore .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body > section#comemore .container div {
+  max-width: 500px;
+}
+
+body > section#comemore h2 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+body > section#comemore p {
+  color: #404040;
+  margin-bottom: 40px;
+}
+
+body > footer {
+  padding: 32px 0;
+}
+
+body > footer .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body > footer .container > a {
+  font-size: 24px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+body > footer .container > a span {
+  vertical-align: super;
+}
+
+body > footer nav a {
+  background-color: rgba(218, 37, 53, 0.15);
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-left: 32px;
+}
+
+@media screen and (max-width: 900px) {
+  body > main .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body > main .container > img {
+    width: 80%;
+    max-width: 480px;
+  }
+  body > main div {
+    width: 100%;
+    text-align: center;
+  }
+  body > main div button {
+    margin: 0 auto;
+    margin-top: 48px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  body > header .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body > header nav {
+    margin-top: 16px;
+    text-align: center;
+  }
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  footer .container > a {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  body > section#acessorios .container main {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
