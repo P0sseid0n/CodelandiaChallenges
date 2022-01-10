@@ -1,0 +1,194 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+	color: white;
+	font-family: 'Poppins', sans-serif;
+}
+
+html {
+	background: linear-gradient(130.02deg, #628e75 0.66%, #1a4855 83.32%);
+
+	height: 100vh;
+}
+
+body {
+	height: 100%;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+
+	max-width: 1200px;
+	margin: 0 auto;
+
+	padding: 0 3%;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+
+	padding: 32px 0;
+
+	div > img {
+		height: 65px;
+	}
+
+	a {
+		margin-left: 32px;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+#text {
+	max-width: 445px;
+}
+
+#img {
+	text-align: right;
+}
+
+main {
+	width: 100%;
+
+	// padding: 64px 0;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	> div {
+		width: 50%;
+	}
+
+	img {
+		width: 80%;
+	}
+
+	div > div {
+		display: flex;
+		flex-direction: row;
+	}
+
+	button {
+		outline: none;
+		border: none;
+
+		width: 50%;
+		height: 48px;
+
+		transform: skewX(-25deg);
+
+		margin-right: 12px;
+
+		cursor: pointer;
+
+		span {
+			display: block;
+			transform: skewX(25deg);
+
+			font-weight: 500;
+			font-size: 16px;
+		}
+	}
+
+	button:first-of-type {
+		background: #658e76;
+	}
+
+	button:last-of-type {
+		background: transparent;
+		border: 4px solid #658e76;
+	}
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 68px;
+	line-height: 109%;
+
+	margin-bottom: 16px;
+}
+
+p {
+	font-weight: normal;
+	font-size: 16px;
+
+	margin-bottom: 40px;
+
+	line-height: 180%;
+}
+
+@media screen and (max-width: 750px) {
+	header {
+		padding: 12px 0;
+	}
+
+	header {
+		div:first-of-type {
+			width: 20%;
+		}
+
+		div {
+			> img {
+				width: 175%;
+			}
+
+			a {
+				margin-left: 24px;
+			}
+		}
+	}
+
+	main {
+		flex-direction: column-reverse;
+
+		> div {
+			width: 100%;
+		}
+
+		h1 {
+			font-size: 52px;
+			margin-bottom: 8px;
+		}
+
+		h3 {
+			font-size: 18px;
+		}
+
+		p {
+			margin-bottom: 24px;
+		}
+
+		button:last-of-type {
+			display: none;
+		}
+	}
+
+	#img {
+		text-align: center;
+		height: 40%;
+	}
+
+	#img img {
+		max-width: 280px;
+		width: 60%;
+	}
+}
